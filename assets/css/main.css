@@ -2626,3 +2626,107 @@ input, select, textarea {
 				}
 
 	}
+
+	.wave-emoji {
+		height: 1em; 
+		width: 1em; 
+		margin: 0px 0.05em 0.1em 0.1em; 
+		vertical-align: -0.1em;
+
+		animation: waving-hand 2.5s infinite;
+		transform-origin: 70% 70%;
+		display: inline-block;
+	}
+
+	@keyframes waving-hand{
+		0% {
+			transform: rotate(0deg);
+		}
+
+		10% {
+			transform: rotate(14deg);
+		}
+
+		20% {
+			transform: rotate(-8deg);
+		}
+
+		30% {
+			transform: rotate(14deg);
+		}
+
+		40% {
+			transform: rotate(-4deg);
+		}
+
+		50% {
+			transform: rotate(10deg);
+		}
+
+		60% {
+			transform: rotate(0deg);
+		}
+
+		100% {
+			transform: rotate(0deg);
+		}
+	}
+
+	.skill{
+		height: 1.5em;
+		width: 1.5em;
+	}
+
+	.skill-icon{
+		height: 1.5em;
+		width: 1.5em;
+		cursor: pointer;
+		opacity: 0.7;
+	}
+
+	.skill .tooltiptext {
+		visibility: hidden;
+		background-color: #60424a;
+		color: #fff;
+		text-align: center;
+		border-radius: 6px;
+		padding: 5px 5px;
+		font-size: small;
+	  }
+	  
+
+	.skill:hover .skill-icon {
+		opacity: 0.4;
+		filter: invert(48%) sepia(79%) saturate(2176%) hue-rotate(289deg) brightness(20%) contrast(100%);
+	}
+
+	.skill:hover .tooltiptext {
+	  visibility: visible;
+	}
+
+	/* Create two equal columns that floats next to each other */
+	.column {
+		float: left;
+		width: 50%;
+		margin: 0%;
+	}
+
+	.column span{
+		margin: 0%;
+		padding: 0%;
+	}
+	
+	/* Clear floats after the columns */
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	
+	/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 600px) {
+		.column {
+		width: 100%;
+		margin-top: -2vh;
+		}
+	}
