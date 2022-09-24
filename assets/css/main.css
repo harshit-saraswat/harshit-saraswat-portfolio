@@ -1975,20 +1975,29 @@ input, select, textarea {
 /* Item */
 
 	.item {
-		box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 		margin-bottom: 40px;
+		border-radius: 1em;
 	}
 
 		.item header {
 			background: #fff;
+			border-radius: 1em;
 			margin: 0;
-			padding: 1em 0 1em 0;
+			padding-bottom: 1em;
 			font-size: 0.8em;
 		}
 
 			.item header h3 {
+				font-weight: bold;
 				font-size: 1em;
 			}
+
+			.item header h4 {
+				font-weight: bold;
+				font-size: 0.8em;
+			}
+
 
 /* Icons */
 
@@ -2730,3 +2739,175 @@ input, select, textarea {
 		margin-top: -2vh;
 		}
 	}
+
+	.org-bg-div{
+		height: 15vh;
+		background-color: #7eaeac;
+		border-radius: 1em 1em 0 0;
+		padding-top: 1em;
+	}
+
+	.org-bg-div.org-wipro{
+		background-color: #351a55;
+		box-shadow: 4px 4px 20px 0 #7746b3;
+	}
+
+	.org-bg-div.org-sysquo{
+		background-color: #21bcc0;
+		box-shadow: 4px 4px 20px 0 #16e2e9;
+	}
+
+	.org-bg-div.org-radix{
+		background-color: #d30500;
+		box-shadow: 4px 4px 20px 0 #d43c3a;
+	}
+
+	.org-bg-div h1{
+		font-weight: bold;
+		color: white;
+	}
+	
+	.org-logo{
+		border-radius: 50%;
+		height: 6em;
+		width: 6em;
+		margin-top: -8vh;
+		background-color: white;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	a.org-link{
+		border:none!important; text-decoration:underline!important;
+
+
+	}
+
+	.org-logo:hover{
+		transform: scale(1.05);
+	}
+
+	a.org-link:hover, a.org-link:active, a.org-link:focus{
+		border:none!important; text-decoration:underline!important;
+	}
+
+/* * {box-sizing:border-box} */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 90%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  margin-top: 4vh;
+  margin-bottom: -10vh;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  border:none; 
+  text-decoration:none;
+}
+
+/* Position the "prev button" to the left */
+.prev {
+	left: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  margin-bottom: -10vh;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+a.edu-link{
+	border:none!important; text-decoration:underline!important;
+	float: left;
+	margin-top: 1.8em;
+	margin-left: 2em;
+}
+
+.edu-content{
+	margin-top: 1.8em;
+	text-align: left;
+	float: left;
+	margin-left: 1em;
+}
+
+.edu-logo{
+	border-radius: 50%;
+	height: 6em;
+	width: 6em;
+	background-color: white;
+}
+
+.content{
+	margin-top: 2em;
+	text-align: left;
+}
+  
+.clearfix::after {
+content: "";
+clear: both;
+display: table;
+}
