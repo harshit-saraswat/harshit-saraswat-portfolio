@@ -3197,7 +3197,7 @@ display: table;
   
   .modal-header {
 	padding: 2px 16px;
-	background-color: #5cb85c;
+	background-color: #a286da;
 	color: white;
   }
   
@@ -3205,6 +3205,36 @@ display: table;
   
   .modal-footer {
 	padding: 2px 16px;
-	background-color: #5cb85c;
+	background-color: #a286da;
 	color: white;
+  }
+
+  #proj-name{
+	font-size: 1em;
+	font-weight: 700;
+	color: white;
+  }
+
+  #proj-tagline{
+	font-size: 0.8em;
+	font-weight: 500;
+	color: white;
+  }
+
+  .content-heading{
+	font-size: 0.6em;
+	font-weight: 700;
+	color: black;
+	margin: 0;
+	padding: 0;
+	line-height: normal;
+	margin-top: 1.5%;
+  }
+
+  .content-detail{
+	font-size: 0.6em;
+	color: black;
+	margin: 0;
+	padding: 0;
+	line-height: normal;
   }
