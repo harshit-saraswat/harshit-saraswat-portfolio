@@ -3238,3 +3238,71 @@ display: table;
 	padding: 0;
 	line-height: normal;
   }
+
+  #main2 {
+	margin-left: 0;
+}
+
+	#main2 > section {
+		margin: 0;
+		overflow: hidden;
+		padding: 4em 0;
+		box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
+		text-align: center;
+		background-image: url("images/overlay.png");
+	}
+
+		#main2 > section.dark {
+			color: #ddd;
+			color: rgba(255, 255, 255, 0.75);
+		}
+
+			#main2 > section.dark h2, #main2 > section.dark h3, #main2 > section.dark h4, #main2 > section.dark h5, #main2 > section.dark h6 {
+				color: inherit;
+			}
+
+			#main2 > section.dark strong {
+				color: #fff;
+				border-color: inherit;
+			}
+
+			#main2 > section.dark a {
+				color: #fff;
+				border-color: inherit;
+			}
+
+				#main2 > section.dark a:hover {
+					border-bottom-color: rgba(255, 255, 255, 0);
+				}
+
+		#main2 > section.cover {
+			padding: 10em 0;
+			background-size: cover;
+			background-position: center center;
+		}
+
+		#main2 > section.one {
+			background-color: #81918E;
+			background-image: url("../../images/banner.jpg");
+		}
+
+		#main2 > section.two {
+			background-color: #f5fafa;
+		}
+
+		#main2 > section.three {
+			background-color: #ecf1f1;
+		}
+
+		#main2 > section.four {
+			background-color: #e8edec;
+		}
+
+
+#goBackBtn{
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	padding-top: 0;
+
+}
